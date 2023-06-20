@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Piedra, papel o tijeras</title>
+</head>
+<body>
+    <header class="encabezado">
+        <h1 class="title">PIEDRA, PAPEL Y TIJERAS</h1>
+      </header>  
+    <main class="principal">
+        <div class="tabla-puntuaciones">
+            <h2 class="info-puntuacion" id="infoPuntuacion">Elige tu movimiento</h2>
+            <h3 class="mensaje-puntuacion" id="mensajePuntuacion">
+                El primero en obtener 5 puntos gana el juego
+            </h3>
+            <div class="contenedor-puntuaciones">
+                <div class="caja-puntuacion">
+                    <div class="signo" id="signoJugador">❔</div>
+                    <p class="puntuacion" id="puntuacionJugador">Jugador: 0</p>
+                </div>
+                <div class="caja-puntuacion">
+                    <div class="signo" id="signoComputadora">❔</div>
+                    <p class="puntuacion" id="puntuacionComputadora">PC: 0</p>
+                </div>
+            </div>
+        </div>
+        <div class="botones">
+            <button class="btn btn-cuadrado" id="btnPiedra">
+                <div class="signo">👊</div>
+            </button>
+            <button class="btn btn-cuadrado" id="btnPapel">
+                <div class="signo">✋</div>
+            </button>
+            <button class="btn btn-cuadrado" id="btnTijeras">
+                <div class="signo">✌</div>
+            </button>
+        </div>
+    </main>
+    <footer class="pie-de-pagina">
+        <p>
+            Derechos de autor ©
+            <script>
+                document.write(new Date().getFullYear())
+            </script>
+            pazrojasr
+        </p>
+        <a href="https://github.com/pazrojasr" target="_blank">
+            <i class="fab fa-github"></i></a>
+    </footer>
+    <div class="modal" id="modalFinJuego">
+        <p class="titulo-modal" id="mensajeFinJuego"></p>
+        <button class="btn btn-reinicio" id="btnReiniciar">Jugar de nuevo</button>
+    </div>
+    <div class="superposicion" id="superposicion"></div>
+    <script src="https://kit.fontawesome.com/b8cdc8451f.js" crossorigin="anonymous"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>
