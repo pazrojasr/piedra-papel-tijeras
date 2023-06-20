@@ -1,1 +1,0 @@
-"# piedra-papel-tijeras" 
